@@ -1,9 +1,8 @@
 # PicoCMS-RequestUrl
-Do something else on RequestUrl
+Show ascii art when curled
 
 * [Installation](#installation)
 
 ## Installation
 
-Copy the `requesturl.php` file to the `plugins/` directory of your Pico Project.
-
+Copy the `ascii_art` directory to the `plugins/` directory of your Pico Project.
