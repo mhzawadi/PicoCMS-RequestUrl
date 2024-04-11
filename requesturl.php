@@ -11,7 +11,7 @@
  * @version 0.0.1
  */
 
-final class MyRequestUrl extends AbstractPicoPlugin
+final class requesturl extends AbstractPicoPlugin
 {
     /**
      * This plugin is enabled by default?
@@ -40,7 +40,22 @@ final class MyRequestUrl extends AbstractPicoPlugin
     public function onRequestUrl(&$url)
     {
       if(strpos($_SERVER['HTTP_USER_AGENT'], 'curl') !== false){
-        echo 'This is horwoods home page, please dont touch it';
+        echo <<<EOL
+                     `. ___
+                    __,' __`.                _..----....____
+        __...--.'``;.   ,.   ;``--..__     .'    ,-._    _.-'
+  _..-''-------'   `'   `'   `'     O ``-''._   (,;') _,'
+,'________________                          \`-._`-','
+ `._              ```````````------...___   '-.._'-:
+    ```--.._      ,.                     ````--...__\-.
+            `.--. `-`                       ____    |  |`
+              `. `.                       ,'`````.  ;  ;`
+                `._`.        __________   `.      \'__/`
+                   `-:._____/______/___/____`.     \  `
+                               |       `._    `.    \
+                               `._________`-.   `.   `.___
+                                                  `------'`
+EOL;
         exit;
       }
     }
